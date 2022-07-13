@@ -1,0 +1,35 @@
+{% extends 'index.html' %} {% load static %} {% block content %}
+<title>Historial</title>
+<table class="table">
+    <thead class="table-dark">
+        <thead>
+            <tr>
+                <th scope="col"> Nombre Appelido</th>
+                <th scope="col">Nombre Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>pera</td>
+                <td>$2000</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>manzana</td>
+                <td>$3000</td>
+                <td>1kg</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">palta</td>
+                <td>$2500</td>
+                <td>2kg</td>
+            </tr>
+        </tbody>
+</table>
+
+{% endblock %}

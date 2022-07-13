@@ -1,0 +1,18 @@
+{% extends 'index.html' %} {% load static %} {% block content %}
+<title>Iniciar Sesion</title>
+<div class="login-box">
+
+    <h1>Iniciar Sesion</h1>
+    <form method="post">
+        <!-- USERNAME INPUT -->
+        <label for="username">Email</label>
+        <input type="text" placeholder="Ingrese Usuario" id="usuario" required>
+        <!-- PASSWORD INPUT -->
+        <label for="PASSWORD">Contraseña</label>
+        <input type="PASSWORD" placeholder="Ingrese Contraseña" id="contraseña" required>
+        <input type="button" value="Iniciar Sesion" onclick="login_fun()">
+        <a href="#">Olvidaste tu contraseña?</a><br>
+        <a href="{% url 'Registro' %}">No tienes una cuenta?</a>
+    </form>
+</div>
+{% endblock %}
